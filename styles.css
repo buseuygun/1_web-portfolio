@@ -1,0 +1,139 @@
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+
+}
+
+header,
+main,
+footer{
+
+max-width: 800px;
+width: 100%;
+margin: 0 auto; /* auto centers the element horizontally */
+padding: 2rem; /* Space inside an element */
+
+}
+
+header{
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; /* Space between nav and href */
+}
+
+nav{
+
+display:flex;
+align-items: center;
+gap: 1rem; /* Space between 2 logos*/
+
+}
+
+nav i{
+
+    font-size: 1.3rem;
+}
+
+main,
+section{
+    display:flex;
+    flex-direction: column;
+
+}
+main{
+
+    gap:4rem; /* gap btw each section is 4rem*/
+}
+section{
+
+    gap:1rem; /* gap withn*/
+}
+
+.intro-header p{
+
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width:500px;
+}
+
+.links-container{
+display:flex;
+align-items:center;
+gap:1rem; /*btw elements*/
+padding:1rem 0; /*vertically 1 rem*/
+
+}
+
+.link-arrow{
+
+color: var(--color-link); /*color off links*/
+transform: rotate(-45deg);
+
+}
+
+.color-div{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid{
+
+display:flex;
+flex-direction: column;
+gap:2rem; /*btw projects*/
+
+}
+
+.project-card{
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem; /*info btw. image*/ 
+
+
+}
+
+.project-links{
+display:flex;
+align-items:center;
+gap:1rem;
+padding-top:0.5rem;
+
+
+}
+
+.tech-list{
+
+display:flex;
+align-items: center;
+gap:0.5rem;
+flex-wrap: wrap; /*in case overflows*/
+padding: 0.5rem 0;
+}
+
+.tech-list div{ /*target 3 little divs within*/
+
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+
+}
+
+.tech-list p{
+    font-size:0.8rem;
+}
+@media (min-width: 640px){
+
+.project-card{
+    flex-direction: row;
+}
+.project-card .img-div{
+    max-width:30%;
+}
+}
+/*now add media query applied to acc. to mobile/web*/
